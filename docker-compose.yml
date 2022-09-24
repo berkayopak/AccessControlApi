@@ -10,12 +10,13 @@ services:
             - "8080:80"
         depends_on:
           - db
+        restart: on-failure
 
     db:
         image: "mcr.microsoft.com/mssql/server:2022-latest"
         ports:
           - "1450:1433"
-
         environment:
             SA_PASSWORD: "8n0y5FKr5X"
             ACCEPT_EULA: "Y"
+        restart: on-failure
