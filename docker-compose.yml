@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+    api:
+        env_file: .env
+        build:
+          context: .
+          dockerfile: ./AccessControlApi/Dockerfile
+        ports:
+            - "8080:80"
+        depends_on:
+          - db
+
+    db:
+        image: "mcr.microsoft.com/mssql/server:2022-latest"
+        ports:
+          - "1450:1433"
+
+        environment:
+            SA_PASSWORD: "8n0y5FKr5X"
+            ACCEPT_EULA: "Y"
