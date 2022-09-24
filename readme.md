@@ -47,3 +47,12 @@ I think it is important to write unit tests in order to obtain more stable, prop
 
 ### Logging & NLog
 I think logging is an indispensable part of almost every project. NLog is a package that I use in all the projects I have developed and that I am satisfied with. Therefore, I used NLog in this project for logging operations.
+
+## What can be done in the next step?
+
+### Ideas
+* Functions can be written to the repository layer for Simple CRUD operations. These written functions can be combined on the facade and crud endpoints can be created on the controller.
+* Functions to add records to UserLogins and UserTokens tables can be written and implemented in the project.
+* After the SSL certificate is installed on the server, https redirection can be activated from the code.
+* Some parameters can be removed from the configs and moved to pipeline management tools (e.g. gitlab).
+* Refresh token functionality can be added to the JWT Auth system.
