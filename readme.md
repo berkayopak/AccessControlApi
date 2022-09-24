@@ -6,9 +6,9 @@ Proof of concept project of an application that can open doors remotely with a s
 ## How to run it?
 
 * First of all, if docker is not installed on your computer, you need to install it.
-For Windows => https://docs.docker.com/desktop/install/windows-install/
-For Linux => https://docs.docker.com/desktop/install/linux-install/
-For Mac => https://docs.docker.com/desktop/install/mac-install/
+	* For Windows => https://docs.docker.com/desktop/install/windows-install/
+	* For Linux => https://docs.docker.com/desktop/install/linux-install/
+	* For Mac => https://docs.docker.com/desktop/install/mac-install/
 * After that, you can run ```docker-compose build``` command in the project root folder directory.
 * And finally, you can run the ```docker-compose up``` command to get the api up.
 
