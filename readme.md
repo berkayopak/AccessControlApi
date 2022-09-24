@@ -57,4 +57,4 @@ I think logging is an indispensable part of almost every project. NLog is a pack
 * Some parameters can be removed from the configs and moved to pipeline management tools (e.g. gitlab).
 * Refresh token functionality can be added to the JWT Auth system.
 
-> :warning: **Note**: Since it is assignment, I created and hosted the sql server in docker.  And I did not add a fixed volume to keep the data constant/persistent. In some cases, it may cause data loss (For example: deleting the container completely, or turning off the docker engine). It will also be useful to specify a fixed volume on docker-compose.yml when performing these operations on a normal server.
+> :warning: **Note**: Since it is a poc project, I created and hosted the sql server in docker.  And I did not add a fixed volume to keep the data constant/persistent. In some cases, it may cause data loss (For example: deleting the container completely, or turning off the docker engine). It will also be useful to specify a fixed volume on docker-compose.yml when performing these operations on a normal server.
