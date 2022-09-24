@@ -85,6 +85,11 @@ public static class ServiceCollectionExtension
 
     private static void AddAuthenticationWithOptions(this IServiceCollection services, IConfiguration configurationManager)
     {
+        //P.S: Since this is just a project I run locally,
+        //I set the Jwt's "ValidateIssuer" and "ValidateAudience" setting variables to false.
+        //However, if we need to deploy this project to the server,
+        //we need to enter the "ValidIssuer" and "ValidAudience"
+        //information correctly after setting these setting variables to true.
         services.AddAuthentication(options =>
         {
             options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
